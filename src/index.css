@@ -401,7 +401,21 @@ li:active{
     .gaming-side-container{
         width: 100vw;
     }
-
+    .views-container{
+        margin-bottom: 19px;
+    }
+    .video-title{
+        margin-top: 18px;
+    }
+    .search-container{
+        margin-top: -50px;
+    }
+    .header-main-container{
+        width: 110vw;
+    }
+    .header-container-main{
+        width: 119vw;
+    }
     .gaming-image{
         height: 300px;
     }
@@ -417,9 +431,7 @@ li:active{
         width: 100vw;
         padding: 26px;
     }
-    .header-container-main{
-        width: 100vw;
-    }
+   
     .video-main-container{
         width: 100vw;
         padding: 35px;
@@ -523,6 +535,9 @@ li:active{
 @media screen and (min-width:430px) and (max-width:800px) {
     .video-profile-image{
         width: 35px;
+    }
+    .search-container{
+        margin-bottom: 12px
     }
     .player-xl{
         display: none;
