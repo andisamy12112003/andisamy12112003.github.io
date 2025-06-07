@@ -1,4 +1,4 @@
-import { Routes,BrowserRouter as Router,Route } from 'react-router'
+import { Routes,BrowserRouter,Route} from 'react-router'
 import Login from './components/Login'
 import Home from './components/Home'
 import Trending from './components/Trending'
@@ -12,7 +12,7 @@ import { AppContext } from './components/Context'
 const App = () => {
   const {authenticated} = useContext(AppContext)
   return(
-    <Router>
+    <BrowserRouter>
       <Routes>
         <Route path='/login' element={<Login/>}/>
         <Route path='/' element={<ProtectedRoute auth={authenticated}>
@@ -32,7 +32,7 @@ const App = () => {
         </ProtectedRoute>}/>
         <Route path='*' element={<NotFound/>}/>
       </Routes>
-    </Router>
+    </BrowserRouter>
   )
 }
 
