@@ -14,14 +14,14 @@ const Trending = () => {
     const {lightmode} = useContext(AppContext)
     const onTrendingVedios = () => {
             return(
-                <div className={`trending-main-video-container ${lightmode?null:"darkMode"}`}>
+                <div className={`trending-main-video-container  ${lightmode?null:"darkMode"}`}>
                     <div>
                         <h1 className="trending-heading-logo"><MdLocalFireDepartment className="fire-icon-trending"/>Trending</h1>
                     </div>
                     {trendingvediosdata.map(items=>(
                      <>
                      <Link className="link" to={`/videos/${items.id}`}>
-                     <div className={`trending-video-container trending-container-md ${lightmode?null:"darkMode"}`}>
+                     <div className={`trending-video-container  ${lightmode?null:"darkMode"}`}>
                         <img className='video-thumbnail' src={items.thumbnailUrl} alt="" />
                         <div className='trending-video-title trending-video-content'>
                             <div>
